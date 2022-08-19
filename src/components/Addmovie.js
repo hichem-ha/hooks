@@ -45,7 +45,7 @@ const AddMovie = ({ setMovies , movies }) => {
                         DESCRIPTION:
                         <input type="text" className="form-control" placeholder="enter description here" onChange={(e) => setDescription(e.target.value)} value={description} />
                         POSTERURL:
-                        <input type="text" className="form-control" placeholder="enter url here" onChange={(e) => setUrl(e.target.value)} value={url} />
+                        <input type="url" className="form-control" placeholder="enter url here" onChange={(e) => setUrl(e.target.value)} value={url} />
                         RATE:
                         <input type="Number" className="form-control" placeholder="enter rate here" onChange={(e) => setRate(e.target.value)} value={rate} />
                         <Button variant="info" type="submit" onClick={handleClick}>
